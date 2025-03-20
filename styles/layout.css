@@ -1,0 +1,13 @@
+#container {
+    display: grid;
+    grid-template-columns: 32.8% 67.2%;
+    gap: 1.25rem;
+    box-sizing: border-box;
+
+    overflow: hidden;
+    width: 80rem;
+    height: 100vh;
+    margin-inline: auto
+    ;
+    
+}
