@@ -1,0 +1,10 @@
+.header {
+    margin-bottom: 2.5rem;
+
+
+& h2 {
+    border-bottom: 2px solid white;
+    width: fit-content;
+}
+
+}

@@ -7,7 +7,37 @@
     overflow: hidden;
     width: 80rem;
     height: 100vh;
-    margin-inline: auto
-    ;
+    margin-inline: auto;
+    padding: 1.25rem;
+}
+
+aside {
+    background: url(../assets/images/Background.png) no-repeat center/cover;
+    overflow: hidden;
+    border-radius: .75rem;
+    max-height: 100%;
+    padding: 2rem 2rem 0;
+
+    & div {
+        display: grid;
+        justify-content: center;
+        gap: 1rem;
+
+        & img {
+            width: 2.865625rem;
+        }
+
+        & header {
+            display: grid;
+            gap: .5rem;
+        }
+    }
+}
+
+main {
+    background-color: var(--shape-body);
+    border-radius: .75rem;
+    padding: 5rem 8.125rem;
+    overflow: auto;
     
 }
