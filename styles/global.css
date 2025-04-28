@@ -54,9 +54,19 @@ h2, h3 {
 h2 {
     font-size: 1.75rem;
     font-family: "Baloo 2", sans-serif;
+    border-bottom: 2px solid white;
+    width: fit-content;
 }
 
 h3 {
     font-size: 1.125rem;
     font-family: "Baloo 2", sans-serif;
+    border-bottom: 2px solid white;
+    width: fit-content;
+}
+
+label {
+    font-size: .875rem;
+    font-family: "Open Sans", sans-serif;
+    border-bottom: 1px solid var(--text-body);
 }

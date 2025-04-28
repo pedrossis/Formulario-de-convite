@@ -1,10 +1,55 @@
 .header {
     margin-bottom: 2.5rem;
-
-
-& h2 {
-    border-bottom: 2px solid white;
-    width: fit-content;
 }
+
+section {
+    display: grid;
+    gap: 1.5rem;
+
+& .frame {
+    display: flex;
+    gap: .75rem;
+    align-items: center;
+
+    & img {
+        width: 1.5rem;
+        opacity: .6;
+    }
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+    "title title"
+    "start end"
+    "type location"
+    "area area"
+    "area area";
+}
+
+.input-wrapper1 {
+    grid-area: title;
+  }
+  
+  .input-wrapper2 {
+    grid-area: start;
+  }
+  
+  .input-wrapper3 {
+    grid-area: end;
+  }
+  
+  .segmented-control {
+    grid-area: type;
+  }
+  
+  .input-wrapper4 {
+    grid-area: location;
+  }
+  
+  .area-wrapper {
+    grid-area: area;
+  }
 
 }
