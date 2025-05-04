@@ -26,21 +26,21 @@
                 <h2>Crie seu convite</h2>
             </div>
             <div id="forms">
-                <section>
+                <form>
                     <div class="frame">
                         <img src="assets/icons/calendar.svg" alt="">
                         <h3>Sobre o evento</h3>
                     </div>
-                    <form>
-                        <div class="input-wrapper1">
+                    <section class="input-wrapper">
+                        <div class="input-wrapper-1">
                            <label for="event">Título</label> 
-                           <input type="text" name="event" id="event" placeholder="Nome do evento">
+                           <input type="text" name="event" id="event" placeholder="Nome do evento" >
                         </div>
-                            <div class="input-wrapper2">
+                            <div class="input-wrapper-2">
                                 <label for="start">Início</label>
                                 <input type="datetime" name="start" id="start" placeholder="DD/MM/AAAA, --:--">
                             </div>
-                            <div class="input-wrapper3">
+                            <div class="input-wrapper-3">
                                 <label for="end">Fím</label>
                                 <input type="datetime" name="end" id="end" placeholder="DD/MM/AAAA, --:--">
                             </div>
@@ -49,7 +49,7 @@
                             <input type="radio" name="type" id="presencial" value="option" checked>
                             <input type="radio" name="type" id="online" value="option">
                         </div>
-                        <div class="input-wrapper4">
+                        <div class="input-wrapper-4">
                             <label for="location">Local</label>
                             <input type="text" name="location" id="location" placeholder="Link ou endereço">
                         </div>
@@ -57,8 +57,8 @@
                             <label for="description">Descrição</label>
                             <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento" rows="8" cols="50"></textarea>
                         </div>
-                    </form>
-                </section>
+                    </section>
+                </form>
             </div>
         </main>
     </div>

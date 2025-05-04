@@ -9,7 +9,7 @@
     --brand-mid: #3487CF;
     --brand-dark: #1D6FB6;
 
-    --danger-color: #FF5959
+    --danger-color: #FF5959;
 
     --input-base: #1C1F21;
     --input-stroke: #363B40;
@@ -27,6 +27,7 @@
 html {
     font: 500 1rem/1.0 "Open Sans", sans-serif;
     color: var(--text-body);
+    zoom: 90%;
 }
 
 body {
@@ -69,4 +70,5 @@ label {
     font-size: .875rem;
     font-family: "Open Sans", sans-serif;
     border-bottom: 1px solid var(--text-body);
+    width: fit-content;
 }
