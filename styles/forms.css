@@ -60,22 +60,36 @@ section.input-wrapper {
   
 .input-wrapper-2 {
     grid-area: start;
+    display: grid;
+    gap: .75rem;
   }
   
 .input-wrapper-3 {
     grid-area: end;
+    display: grid;
+    gap: .75rem;
   }
   
 .segmented-control {
     grid-area: type;
+    display: grid;
+    gap: .75rem;
+
+    & input[type="radio"] {
+      appearance: none;
+    }
   }
   
 .input-wrapper-4 {
     grid-area: location;
+    display: grid;
+    gap: .75rem;
   }
   
 .area-wrapper {
     grid-area: area;
+    display: grid;
+    gap: .75rem;
   }
 
 }

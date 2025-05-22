@@ -41,13 +41,24 @@
                                 <input type="datetime" name="start" id="start" placeholder="DD/MM/AAAA, --:--">
                             </div>
                             <div class="input-wrapper-3">
-                                <label for="end">Fím</label>
+                                <label for="end">Fim</label>
                                 <input type="datetime" name="end" id="end" placeholder="DD/MM/AAAA, --:--">
                             </div>
                         <div class="segmented-control">
                             <label for="option">Tipo</label>
-                            <input type="radio" name="type" id="presencial" value="option" checked>
-                            <input type="radio" name="type" id="online" value="option">
+                            <div>
+                                <input type="radio" name="type" id="presencial"
+                                value="option" checked>
+                                <label for="presencial">
+                                    <img src="assets/icons/building.svg" alt="">
+                                    Presencial
+                                </label>
+                                <input type="radio" name="type" id="online" value="option"> 
+                                <label for="location">
+                                    <img src="assets/icons/video.svg" alt="">
+                                    Online
+                                </label>
+                            </div>
                         </div>
                         <div class="input-wrapper-4">
                             <label for="location">Local</label>
