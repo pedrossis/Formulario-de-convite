@@ -39,5 +39,21 @@ main {
     border-radius: .75rem;
     padding: 5rem 8.125rem;
     overflow: auto;
+    width: 100vw;
     
+    & form {
+    display: grid;
+    gap: 1.5rem;
+}
+    & .frame {
+    display: flex;
+    gap: .75rem;
+    align-items: center;
+
+    & img {
+        width: 1.5rem;
+        opacity: .6;
+    }
+    }
+   
 }

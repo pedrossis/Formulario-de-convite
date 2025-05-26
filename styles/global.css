@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -27,12 +27,13 @@
 html {
     font: 500 1rem/1.0 "Open Sans", sans-serif;
     color: var(--text-body);
-    zoom: 80%;
+    zoom: 85%;
 }
 
 body {
     background-color: var(--shape-background);
     overflow: hidden;
+    width: 100%;
 }
 
 #forms {
