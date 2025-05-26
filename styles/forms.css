@@ -75,8 +75,61 @@ section.input-wrapper {
     display: grid;
     gap: .75rem;
 
-    & input[type="radio"] {
-      appearance: none;
+    & .radio-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: .25rem;
+      gap: .25rem;
+      background-color: var(--input-base);
+      border-radius: .5rem;
+      border: 1px solid var(--input-stroke);
+
+      & .label-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+        padding: .25rem;
+        
+        height: 1.8rem;
+
+        position: relative;
+        transition: .2s all ease;
+
+        & input,
+        & input:focus,
+        & input:hover {
+        all: unset;
+        position: absolute;
+        inset: 0;
+      }
+
+        & label {
+          border-bottom: 2px solid var(--text-body);
+          opacity: .5;
+        }
+
+        & img {
+          width: 1rem;
+          height: auto;
+        }
+
+        &:hover,
+        &:focus-within {
+          border-radius: .25rem;
+          background-color: var(--input-stroke);
+          
+
+          & label {
+            opacity: 1;
+          }
+
+          & img {
+            filter: invert(57%) sepia(88%) saturate(725%) hue-rotate(182deg) brightness(101%) contrast(104%);
+          }
+        }
+      }
+
     }
   }
   
