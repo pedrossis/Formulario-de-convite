@@ -18,6 +18,8 @@ section.input-wrapper {
       padding-block: .875rem;
       border-radius: .5rem;
       border: 1px solid var(--input-stroke);
+      color: var(--text-body);
+
 
       &::placeholder {
         color: var(--input-placeholder);
@@ -76,7 +78,7 @@ section.input-wrapper {
         gap: .5rem;
         padding: .25rem;
         
-        height: 1.8rem;
+        height: 2.15rem;
 
         position: relative;
         transition: .2s all ease;
@@ -87,6 +89,7 @@ section.input-wrapper {
         all: unset;
         position: absolute;
         inset: 0;
+        
       }
 
         & label {
@@ -100,7 +103,8 @@ section.input-wrapper {
         }
 
         &:hover,
-        &:focus-within {
+        &:focus-within,
+        &:checked {
           border-radius: .25rem;
           background-color: var(--input-stroke);
           

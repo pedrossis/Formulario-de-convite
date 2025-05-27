@@ -6,25 +6,54 @@ section.input-wrapper-1 {
         display: flex;
         flex-direction: column;
         gap: 1rem;
+        height: 4.6875rem;
 
         & .color-wrapper {
-            
-            & input {
-                border: none;
+            display: flex;
+            gap: 1.25rem;
+            padding-top: .5rem;
+            padding-left: .25rem;
+            justify-content: space-evenly;
+
+            & .color-inner {
                 width: 1.75rem;
                 height: 1.75rem;
-                border-radius: 50%;
-                background: none;;
-            }
+                border-radius: 999px;
+                outline: 6px solid var(--shape-button);
+                background-color: var(--shape-background);
+                position: relative;
 
-            & input[type="color"]::-webkit-color-swatch-wrapper {
-                padding: 0;
-                border: none;
-                border-radius: 50%;
-                
-            }
+                transition: .2s all ease;
 
+                &:hover {
+                    outline: 6px solid var(--shape-hover);
+                }
+    
+                & input {
+                    border: none;
+                    width: 1.75rem;
+                    height: 1.75rem;
+                    border-radius: 50%;
+                    background: none;
+                    position: absolute;
+                    
+                }
+    
+                & input[type="color"]::-webkit-color-swatch-wrapper {
+                    padding: 0;
+                    border: none;
+                    border-radius: 50%;
+                }
+    
+                & input[type="color"]::-webkit-color-swatch {
+                    border: none;
+                    border-radius: 50%;
+                }
+    
+            }
         }
+
+        
 
     }
 }
