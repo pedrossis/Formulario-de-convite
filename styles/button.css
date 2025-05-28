@@ -1,0 +1,77 @@
+section .switch-wrapper {
+    display: flex;
+    gap: 1rem;
+    margin-top: .75rem;
+
+    .switch-toggle {
+            display: grid; 
+            gap: 1.25rem;
+            min-width: 11rem;
+
+            & .frame-4 {
+                display: flex;
+                gap: .75rem;
+                align-items: center;
+
+                & input {
+                    display: none;
+                }
+
+                & .button {
+                    width: 4rem;
+                    height: 2rem;
+                    background-color: var(--input-base);
+                    border: 1px solid var(--input-stroke);
+                    border-radius: 999px;
+                    position: relative;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+
+                    &::after {
+                        content: '';
+                        display: block;
+                        width: 1.5rem;
+                        height: 1.5rem;
+                        background-color: var(--input-stroke);
+                        border-radius: 999px;
+                        position: absolute;
+                        top: 3px;
+                        left: 2px;
+                        transition: all 0.3s ease;
+                    }
+                }
+
+                /* Estado ativo - quando input está checked */
+                & input:checked + .button::after {
+                    transform: translateX(2rem);
+                    background-color: white;
+                }
+
+                & input:checked + .button {
+                    background-color: var(--brand-light);
+                }
+
+                /* Label que muda o texto */
+                & .switch-label {
+                    font-size: 14px;
+                    color: #333;
+                    cursor: pointer;
+                    user-select: none;
+
+                    &::after {
+                        content: "Escuro";
+                        color: white;
+                    }
+                }
+
+                /* Quando o input está checked, muda o texto do label */
+                & input:checked ~ .switch-label::after {
+                    content: "Claro";
+                    color: white;
+                }
+            }
+        }
+
+    
+}
+
