@@ -16,6 +16,22 @@ section.input-wrapper-2 {
             border: 1px solid var(--input-stroke);
             color: var(--text-body);
             outline: 0;
+
+            &::placeholder {
+                color: var(--input-placeholder);
+                font-size: 1rem;
+                font-family: "Open Sans", sans-serif;
+                border-bottom: 1px solid var(--input-placeholder);
+                opacity: 70%;
+                width: fit-content;
+            }
+
+            &:focus {
+                outline: 1px solid var(--brand-light);
+                outline-offset: -1px;
+            }
+        }
+
         }
 
         & .text-wrapper {
@@ -36,4 +52,3 @@ section.input-wrapper-2 {
             }
         }
     }
-}
