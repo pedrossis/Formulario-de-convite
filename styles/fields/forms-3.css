@@ -1,0 +1,39 @@
+section.input-wrapper-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    & form {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+
+        & input {
+            background-color: var(--input-base);
+            padding-inline: 1rem;
+            padding-block: .875rem;
+            border-radius: .5rem;
+            border: 1px solid var(--input-stroke);
+            color: var(--text-body);
+            outline: 0;
+        }
+
+        & .text-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: .75rem;
+        }
+
+        & .email-phone-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+
+            & .mail-wrapper {
+                display: flex;
+                flex-direction: column;
+                gap: .75rem;
+            }
+        }
+    }
+}

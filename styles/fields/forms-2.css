@@ -26,7 +26,7 @@ section .theme {
 
             &:has(input[type="radio"]:checked) {
                 border: 2px solid var(--brand-light);
-            }
+            } 
             
             & input {
                 position: absolute;
