@@ -36,7 +36,7 @@ section .switch-wrapper {
                         background-color: var(--input-stroke);
                         border-radius: 999px;
                         position: absolute;
-                        top: 2px;
+                        top: 3px;
                         left: 2px;
                         transition: all 0.3s ease;
                     }
