@@ -11,7 +11,7 @@ Formulário web básico que permite criar convites personalizados para eventos. 
 
 ## 📸 Preview
 
-![Festiulite - Formulário de Convite](https://github.com/pedrossis/Formulario-de-convite/blob/main/preview.png?raw=true)
+![Image](https://github.com/user-attachments/assets/6d598641-ece3-426d-b3ae-85055dde29f3)
 
 *Interface do Festiulite mostrando o formulário de criação de convites com personalização de cores e temas*
 
