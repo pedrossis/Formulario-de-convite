@@ -73,3 +73,12 @@ label {
     border-bottom: 1px solid var(--text-body);
     width: fit-content;
 }
+
+input:invalid {
+    border: 1px solid var(--danger-color);
+    outline: none;
+}
+
+input:valid + .error-wrapper {
+ display: none;
+}

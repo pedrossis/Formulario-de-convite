@@ -58,6 +58,7 @@ footer .action-wrapper {
         padding: .25rem 1.25rem;
         border-radius: .5rem;
         height: 3rem;
+        text-align: center;
 
         &:hover {
             background-color: var(--brand-mid);

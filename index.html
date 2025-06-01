@@ -28,7 +28,7 @@
             <div id="forms">
                 <form>
                     <div class="frame">
-                        <img src="assets/icons/calendar.svg" alt="">
+                        <img src="assets/icons/calendar.svg" alt="icone de calendário">
                         <h3>Sobre o evento</h3>
                     </div>
                     <section class="input-wrapper">
@@ -65,13 +65,13 @@
                         </div>
                         <div class="area-wrapper">
                             <label for="description">Descrição</label>
-                            <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento" rows="8" cols="50"></textarea>
+                            <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento" rows="8" cols="50" required></textarea>
                         </div>
                     </section>
                 </form>
                 <section class="input-wrapper-1">
                         <div class="frame">
-                            <img src="assets/icons/paintbrush.svg" alt="">
+                            <img src="assets/icons/paintbrush.svg" alt="icon">
                             <h3>Personalização</h3>
                         </div>
                         <form>
@@ -210,7 +210,11 @@
                     <form>
                         <div class="text-wrapper">
                             <label for="name">Nome</label>
-                            <input type="text" name="name" id="name" placeholder="Nome Completo">
+                            <input type="text" name="name" id="name" placeholder="Nome Completo" required>
+                            <div class="error-wrapper">
+                                <img src="assets/icons/circle-alert.svg" alt="icone de alerta">
+                                <span>Campo obrigatório</span>
+                            </div>
                         </div>
 
                         <div class="email-phone-wrapper">
@@ -243,10 +247,10 @@
                     </div>
 
                     <div class="action-wrapper">
-                    <div class="button-wrapper">
+                    <button type="submit" class="button-wrapper">
                       <img src="assets/icons/ticket.svg" alt="">
                       <label for="">Gerar convite</label>
-                    </div>
+                    </button>
                     </div>
                 </footer>
             </div>
