@@ -1,6 +1,6 @@
 # 📧 Formulário de Convite
 
-Um formulário web simples para criação de convites personalizados, desenvolvido com HTML e CSS.
+Um formulário web simples para criação de convites personalizados, desenvolvido apenas com HTML e CSS.
 
 ![HTML](https://img.shields.io/badge/HTML-5-orange.svg)
 ![CSS](https://img.shields.io/badge/CSS-3-blue.svg)
@@ -13,7 +13,7 @@ Formulário web básico que permite criar convites personalizados para eventos. 
 
 ![Image](https://github.com/user-attachments/assets/6d598641-ece3-426d-b3ae-85055dde29f3)
 
-*Interface do Festiulite mostrando o formulário de criação de convites com personalização de cores e temas*
+*Interface do Festivite mostrando o formulário de criação de convites com personalização de cores e temas*
 
 ## 🚀 Como Usar
 
